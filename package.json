@@ -1,0 +1,19 @@
+{
+  "name": "spotyfi-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass assets/scss/styles.scss assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrilzk/SPOTYFI-CLONE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitrilzk/SPOTYFI-CLONE/issues"
+  },
+  "homepage": "https://github.com/dimitrilzk/SPOTYFI-CLONE#readme"
+}
