@@ -65,10 +65,41 @@
   border-radius: 50%;
 }
 
+.main {
+  width: 60%;
+  height: 100%;
+}
+
+.library-row {
+  display: flex;
+}
+
 body {
   background-color: #000000;
   color: white;
   font-family: "Albert Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.side {
+  width: 20%;
+  height: 100%;
+  margin: 10px;
+}
+
+.main {
+  width: 60%;
+  height: 100%;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
