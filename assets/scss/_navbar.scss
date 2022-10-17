@@ -1,0 +1,69 @@
+.topbar{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $bg-color;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: $white;
+    margin: auto;
+    background-color: $bg-box;
+    }
+
+.btn:hover{
+    background-color: $bg-button;
+    }
+
+.search{
+    display: flex; 
+}
+
+.home{
+    width: 50px;
+    height: 50px;
+    background-color: $bg-button;
+}
+
+.input{
+    margin: 0 10px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: $bg-button;
+    
+    .btn{
+        width: 50px;
+        height: 50px;
+        background-color: $bg-button;
+    }
+
+    input{
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 0px 30px 30px 0px;
+        color: $text-gray;
+        padding: 0 10px;
+        margin: auto;
+        background-color: $bg-button;
+}
+    input:focus, input:active, input:enabled{
+        border: none;
+}
+
+}
+
+.user{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color:$bg-button;
+    border-radius: 50%;
+}

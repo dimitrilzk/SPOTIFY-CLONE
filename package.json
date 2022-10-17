@@ -15,5 +15,8 @@
     "url": "https://github.com/dimitrilzk/SPOTYFI-CLONE/issues"
   },
   "homepage": "https://github.com/dimitrilzk/SPOTYFI-CLONE#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
