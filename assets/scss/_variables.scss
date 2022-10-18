@@ -8,9 +8,28 @@ $bg-box: #121212;
 $bg-color: #000000;
 
 // fonts
+.h1, h1{
+    font-size: 32px;
+    font-family: 'CircularStd-900', 'Albert sans', sans-serif;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.h2, h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.h3, h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
 .h4, h4{
     font-size: 16px;
-    font-family: 'Albert sans', sans-serif;
+    font-family: 'CircularStd-400' 'Albert sans', sans-serif;
     font-weight: 400;
     line-height: 26px;
 }
@@ -31,9 +50,19 @@ $bg-color: #000000;
 
 .p, p{
     font-size: 14px;
-    font-family: 'Albert sans', sans-serif;
+    font-family: 'CircularStd-400' 'Albert sans', sans-serif;
     font-weight: 400;
     line-height: 22px;
     color: #b3b3b3;
 }
+
+//underline
+.h2:hover, h2:hover, .h6:hover, h6:hover, .p:hover, p:hover {
+    text-decoration: underline;
+}
+//overlay
+.p:hover, p:hover {
+    color: $white;
+}
+
 

@@ -16,6 +16,18 @@
     src: url(../fonts/CircularStd-Book.otf);
     // src: url(../fonts/CircularStd-BookItalic.otf);
 }
+@font-face {
+    font-family:'CircularStd-900';
+    src: url(../fonts/CircularStd-Black.otf);
+}
+@font-face {
+    font-family:'CircularStd-400';
+    src: url(../fonts/CircularStd-Medium.otf);
+}
+@font-face {
+    font-family:'CircularStd-200';
+    src: url(../fonts/CircularStd-Book.otf);
+}
 
 body{
     background-color: $bg-color;
