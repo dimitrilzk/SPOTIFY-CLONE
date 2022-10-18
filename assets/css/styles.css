@@ -54,6 +54,32 @@
   color: #ffffff;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+  max-height: 250px;
+  margin: 10px;
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.cover {
+  border-radius: 5px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.playlist-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
 .topbar {
   display: flex;
   height: 60px;
