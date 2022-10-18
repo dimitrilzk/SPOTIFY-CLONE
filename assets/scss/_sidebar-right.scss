@@ -1,1 +1,35 @@
+.sd-right {
+    max-width: 20%;
+}
+.att-amici {
+    margin-bottom: 30px;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.icon-amici {
+    display: flex;
+    i {
+        margin-left: 10px;
+    }
+}
+.amico {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    p, h5 {
+        margin: 0px;
+    }
+    .friend-data {
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .friend-time {
+        text-align: end;
+    }
 
+}
