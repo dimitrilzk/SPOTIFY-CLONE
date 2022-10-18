@@ -101,6 +101,46 @@ path {
   border-radius: 50%;
 }
 
+.sd-right {
+  max-width: 20%;
+}
+
+.l {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.add {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.like {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.bookmark {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.paragraph {
+  padding-left: 10px;
+}
+
+main {
+  max-width: 60%;
+}
+
 .main {
   width: 60%;
   height: 100%;
