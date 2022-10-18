@@ -30,6 +30,13 @@
     width: 50px;
     height: 50px;
     background-color: $bg-button;
+    color: $white;
+    -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: medium;
+}
+
+path{
+    color: whitesmoke;
 }
 
 .input{
@@ -46,7 +53,7 @@
 
     input{
         width: 400px;
-        height: 40px;
+        height: 50px;
         border: none;
         border-radius: 0px 30px 30px 0px;
         color: $text-gray;

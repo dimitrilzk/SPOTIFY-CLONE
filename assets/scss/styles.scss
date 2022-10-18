@@ -5,10 +5,22 @@
 @import "./sidebar-right";
 
 
+@font-face {
+    font-family:'CircularStd';
+    src: url(../fonts/CircularStd-Black.otf);
+    // src: url(../fonts/CircularStd-BlackItalic.otf);
+    src: url(../fonts/CircularStd-Bold.otf);
+    // src: url(../fonts/CircularStd-BoldItalic.otf);
+    src: url(../fonts/CircularStd-Medium.otf);
+    // src: url(../fonts/CircularStd-MediumItalic.otf);
+    src: url(../fonts/CircularStd-Book.otf);
+    // src: url(../fonts/CircularStd-BookItalic.otf);
+}
+
 body{
     background-color: $bg-color;
     color: white;
-    font-family: 'Albert Sans', sans-serif;
+    font-family: 'CircularStd', sans-serif;
 }
 
 .container{
