@@ -231,17 +231,19 @@ main {
   display: flex;
   align-items: flex-end;
 }
-
-.album-details {
-  margin-top: 55px;
-}
-
-.album-container h1 {
+.album-info h1 {
   font-size: 60px;
   margin-block: 15px;
 }
-.album-container h5 {
+.album-info h5 {
   margin-left: 10px;
+}
+.album-info h6 {
+  margin-bottom: 45px;
+}
+
+.album-details {
+  margin-top: 55px;
 }
 
 .album-img {

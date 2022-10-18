@@ -12,11 +12,6 @@
 .album-info {
     display: flex;
     align-items: flex-end;
-}
-.album-details {
-    margin-top: 55px;
-}
-.album-container {
     h1 {
         font-size: 60px;
         margin-block: 15px;
@@ -24,6 +19,12 @@
     h5 {
         margin-left: 10px;
     }
+    h6 {
+        margin-bottom: 45px;
+    }
+}
+.album-details {
+    margin-top: 55px;
 }
 .album-img {
     margin: 25px;
