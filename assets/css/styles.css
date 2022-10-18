@@ -108,11 +108,10 @@ path {
 }
 .input input {
   width: 400px;
-  height: 50px;
-  border: none;
   border-radius: 0px 30px 30px 0px;
   color: #a6a6a6;
-  padding: 0 10px;
+  padding-left: 10px;
+  vertical-align: super;
   margin: auto;
   background-color: #232323;
 }
@@ -166,15 +165,6 @@ path {
 
 main {
   max-width: 60%;
-}
-
-.main {
-  width: 60%;
-  height: 100%;
-}
-
-.library-row {
-  display: flex;
 }
 
 .sd-right {
