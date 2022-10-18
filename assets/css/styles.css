@@ -1,3 +1,32 @@
+.h4, h4 {
+  font-size: 16px;
+  font-family: "Albert sans", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.h5, h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.h6, h6 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+}
+
+.p, p {
+  font-size: 14px;
+  font-family: "Albert sans", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: #b3b3b3;
+}
+
 .topbar {
   display: flex;
   height: 60px;
@@ -30,6 +59,13 @@
   width: 50px;
   height: 50px;
   background-color: #232323;
+  color: #ffffff;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: medium;
+}
+
+path {
+  color: whitesmoke;
 }
 
 .input {
@@ -45,7 +81,7 @@
 }
 .input input {
   width: 400px;
-  height: 40px;
+  height: 50px;
   border: none;
   border-radius: 0px 30px 30px 0px;
   color: #a6a6a6;
@@ -74,10 +110,17 @@
   display: flex;
 }
 
+@font-face {
+  font-family: "CircularStd";
+  src: url(../fonts/CircularStd-Black.otf);
+  src: url(../fonts/CircularStd-Bold.otf);
+  src: url(../fonts/CircularStd-Medium.otf);
+  src: url(../fonts/CircularStd-Book.otf);
+}
 body {
   background-color: #000000;
   color: white;
-  font-family: "Albert Sans", sans-serif;
+  font-family: "CircularStd", sans-serif;
 }
 
 .container {
