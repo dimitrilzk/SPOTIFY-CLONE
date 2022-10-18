@@ -177,6 +177,44 @@ main {
   display: flex;
 }
 
+.sd-right {
+  max-width: 20%;
+}
+
+.att-amici {
+  margin-bottom: 30px;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.icon-amici {
+  display: flex;
+}
+.icon-amici i {
+  margin-left: 10px;
+}
+
+.amico {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.amico p, .amico h5 {
+  margin: 0px;
+}
+.amico .friend-data {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.amico .friend-time {
+  text-align: end;
+}
+
 @font-face {
   font-family: "CircularStd";
   src: url(../fonts/CircularStd-Black.otf);
