@@ -1,0 +1,30 @@
+.artista-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+}
+.album-info {
+    display: flex;
+    align-items: flex-end;
+}
+.album-details {
+    margin-top: 55px;
+}
+.album-container {
+    h1 {
+        font-size: 60px;
+        margin-block: 15px;
+    }
+    h5 {
+        margin-left: 10px;
+    }
+}
+.album-img {
+    margin: 25px;
+}
