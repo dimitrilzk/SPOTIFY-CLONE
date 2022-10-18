@@ -215,6 +215,39 @@ main {
   text-align: end;
 }
 
+.main {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.title-item {
+  margin-top: 10px;
+}
+
+#contenitor-submit {
+  display: flex;
+  align-items: center;
+}
+
+.icon-play {
+  font-size: 50px;
+}
+
+#icon-item-play {
+  border-radius: 50%;
+  background-color: black;
+  color: #1ed760;
+}
+
+.follow {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #232323;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
 @font-face {
   font-family: "CircularStd";
   src: url(../fonts/CircularStd-Black.otf);
