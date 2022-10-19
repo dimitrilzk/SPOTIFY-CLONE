@@ -269,6 +269,24 @@ main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-inline: 30px;
+}
+
+.genera-tracce {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-inline: 30px;
+}
+.genera-tracce div p {
+  margin: 0px;
+}
+.genera-tracce div h4 {
+  margin-bottom: 5px;
+}
+.genera-tracce .row-tracks {
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
@@ -339,6 +357,74 @@ main {
   max-width: 150px;
   max-height: fit-content;
   vertical-align: bottom;
+}
+
+.main {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.title-item {
+  margin-top: 10px;
+}
+
+#contenitor-submit {
+  display: flex;
+  align-items: center;
+}
+
+.icon-play {
+  font-size: 50px;
+}
+
+#icon-item-play {
+  border-radius: 50%;
+  background-color: black;
+  color: #1ed760;
+}
+
+.follow {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#list-item {
+  padding-bottom: 10px;
+}
+
+.allineamento {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.number-item {
+  margin-right: 10px;
+  color: #a6a6a6;
+}
+
+.contenitor-list {
+  width: 90%;
+}
+
+.img-album {
+  padding-right: 10px;
+}
+
+.visualize {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.duration {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: end;
 }
 
 @font-face {
