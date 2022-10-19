@@ -265,6 +265,12 @@ main {
   vertical-align: sub;
 }
 
+.album-legend {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 @font-face {
   font-family: "CircularStd";
   src: url(../fonts/CircularStd-Black.otf);
