@@ -29,3 +29,26 @@
 .album-img {
     margin: 25px;
 }
+//tracks
+.album-tracks {
+    background-color: $bg-button;
+}
+.album-play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $green;
+    font-size: 15px;
+    border: none;
+    i {
+        vertical-align: middle;
+    }
+}
+.album-btn {
+    border: none;
+    background-color: $bg-button;
+    color: $text-gray;
+    font-size: 20px;
+    margin-inline: 8px;
+    vertical-align: sub;
+}
