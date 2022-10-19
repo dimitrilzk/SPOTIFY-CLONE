@@ -56,4 +56,21 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-inline: 30px;
+}
+.genera-tracce {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-inline: 30px;
+    div p {
+        margin: 0px;
+    }
+    div h4 {
+        margin-bottom: 5px;
+    }
+    .row-tracks {
+        display: flex;
+        flex-direction: column;
+    }
 }

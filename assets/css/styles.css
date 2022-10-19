@@ -269,6 +269,24 @@ main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-inline: 30px;
+}
+
+.genera-tracce {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-inline: 30px;
+}
+.genera-tracce div p {
+  margin: 0px;
+}
+.genera-tracce div h4 {
+  margin-bottom: 5px;
+}
+.genera-tracce .row-tracks {
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
