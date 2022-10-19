@@ -243,9 +243,39 @@ main {
 .follow {
   padding: 5px 10px;
   color: #ffffff;
-  background-color: #232323;
+  background-color: transparent;
   margin-left: 10px;
   border-radius: 5px;
+}
+
+#list-item {
+  padding-bottom: 10px;
+}
+
+.allineamento {
+  display: flex;
+  align-items: center;
+}
+
+.number-item {
+  margin-right: 10px;
+  color: #a6a6a6;
+}
+
+.img-album {
+  padding-right: 10px;
+}
+
+.visualize {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.duration {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: end;
 }
 
 @font-face {

@@ -21,7 +21,31 @@
 .follow {
     padding: 5px 10px;
     color: $white;
-    background-color: $bg-button;
+    background-color: transparent;
     margin-left: 10px;
     border-radius: 5px;
+}
+#list-item{
+    padding-bottom: 10px;
+}
+.allineamento{
+    display: flex;
+    align-items: center;
+}
+.number-item{
+    margin-right: 10px;
+    color: $text-gray;
+}
+.img-album{
+    padding-right: 10px;
+}
+.visualize{
+    width: 100%;
+    color: $text-gray;
+    text-align: center;
+}
+.duration{
+    width: 100%;
+    color: $text-gray;
+    text-align: end;
 }
