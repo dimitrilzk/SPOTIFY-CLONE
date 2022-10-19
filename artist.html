@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify | Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="topbar">
+        <div class="page-nav">
+          <button class="btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="search">
+          <div>
+            <button class="btn home">
+              <svg width="24" height="24">
+                <path d="M13.5 1.51521C13.0439 1.2519 12.5266 1.11328 12 1.11328C11.4734 1.11328 10.9561 1.2519 10.5 1.51521L3 5.8452C2.69597 6.02074 2.4435 6.27321 2.26796 6.57723C2.09243 6.88126 2.00001 7.22614 2 7.57721V21.0002C2 21.2654 2.10536 21.5198 2.29289 21.7073C2.48043 21.8948 2.73478 22.0002 3 22.0002H9C9.26522 22.0002 9.51957 21.8948 9.70711 21.7073C9.89464 21.5198 10 21.2654 10 21.0002V15.0002H14V21.0002C14 21.2654 14.1054 21.5198 14.2929 21.7073C14.4804 21.8948 14.7348 22.0002 15 22.0002H21C21.2652 22.0002 21.5196 21.8948 21.7071 21.7073C21.8946 21.5198 22 21.2654 22 21.0002V7.57721C22 7.22614 21.9076 6.88126 21.732 6.57723C21.5565 6.27321 21.304 6.02074 21 5.8452L13.5 1.51521V1.51521Z" fill="white"/>
+                </svg>
+          </div>
+          <div class="input">
+            <button class="btn">
+              <svg width="24" height="24">
+                <path d="M10.533 1.27932C5.35298 1.27932 1.12598 5.41932 1.12598 10.5583C1.12598 15.6973 5.35198 19.8373 10.533 19.8373C12.767 19.8373 14.823 19.0673 16.44 17.7793L20.793 22.1323C20.8852 22.2278 20.9956 22.304 21.1176 22.3564C21.2396 22.4088 21.3708 22.4364 21.5036 22.4376C21.6364 22.4387 21.768 22.4134 21.8909 22.3631C22.0138 22.3129 22.1255 22.2386 22.2194 22.1447C22.3133 22.0508 22.3875 21.9392 22.4378 21.8163C22.4881 21.6934 22.5134 21.5617 22.5122 21.4289C22.5111 21.2961 22.4835 21.1649 22.4311 21.0429C22.3787 20.9209 22.3025 20.8106 22.207 20.7183L17.863 16.3743C19.2079 14.7347 19.942 12.679 19.94 10.5583C19.94 5.41832 15.714 1.27832 10.533 1.27832V1.27932ZM3.12598 10.5583C3.12598 6.55232 6.42798 3.27832 10.533 3.27832C14.638 3.27832 17.94 6.55232 17.94 10.5583C17.94 14.5643 14.638 17.8373 10.533 17.8373C6.42798 17.8373 3.12598 14.5643 3.12598 10.5573V10.5583Z" fill="white"/>
+                </svg>
+                
+            </button>
+            <input type="search" placeholder="Cosa vuoi ascoltare?" />
+          </div>
+        </div>
+        <div class="user">
+          <img src="./assets/img/user.png" alt="gerry-scotty" />
+        </div>
+      </div>
+    </header>
+    <!-- end navbar -->
+    <div class="container">
+      <!-- sidebar left -->
+      <section class="side box sd-left">
+        <div class="sidebar">
+          <button class="l">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 2.134C14.652 2.04623 14.8245 2.00003 15 2.00003C15.1755 2.00003 15.348 2.04623 15.5 2.134L21.5 5.598C21.652 5.68577 21.7783 5.812 21.866 5.96401C21.9538 6.11603 22 6.28847 22 6.464V21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22H15C14.7348 22 14.4804 21.8946 14.2929 21.7071C14.1054 21.5196 14 21.2652 14 21V3C14 2.82447 14.0462 2.65203 14.134 2.50001C14.2217 2.348 14.348 2.22177 14.5 2.134V2.134ZM16 4.732V20H20V7.041L16 4.732ZM3 22C2.73478 22 2.48043 21.8946 2.29289 21.7071C2.10536 21.5196 2 21.2652 2 21V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2C3.26522 2 3.51957 2.10536 3.70711 2.29289C3.89464 2.48043 4 2.73478 4 3V21C4 21.2652 3.89464 21.5196 3.70711 21.7071C3.51957 21.8946 3.26522 22 3 22ZM9 22C8.73478 22 8.48043 21.8946 8.29289 21.7071C8.10536 21.5196 8 21.2652 8 21V3C8 2.73478 8.10536 2.48043 8.29289 2.29289C8.48043 2.10536 8.73478 2 9 2C9.26522 2 9.51957 2.10536 9.70711 2.29289C9.89464 2.48043 10 2.73478 10 3V21C10 21.2652 9.89464 21.5196 9.70711 21.7071C9.51957 21.8946 9.26522 22 9 22Z" fill="white"/>
+                  </svg>
+                  <p class="paragraph">La tua libreria</p>
+                </button>
+          <div>
+          </br>
+          </div>
+          <button class="add">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_91_304)">
+              <path d="M11.4375 6C11.4375 6.14918 11.3782 6.29226 11.2727 6.39775C11.1673 6.50324 11.0242 6.5625 10.875 6.5625H6.5625V10.875C6.5625 11.0242 6.50324 11.1673 6.39775 11.2727C6.29226 11.3782 6.14918 11.4375 6 11.4375C5.85082 11.4375 5.70774 11.3782 5.60225 11.2727C5.49676 11.1673 5.4375 11.0242 5.4375 10.875V6.5625H1.125C0.975816 6.5625 0.832742 6.50324 0.727252 6.39775C0.621763 6.29226 0.5625 6.14918 0.5625 6C0.5625 5.85082 0.621763 5.70774 0.727252 5.60225C0.832742 5.49676 0.975816 5.4375 1.125 5.4375H5.4375V1.125C5.4375 0.975816 5.49676 0.832742 5.60225 0.727252C5.70774 0.621763 5.85082 0.5625 6 0.5625C6.14918 0.5625 6.29226 0.621763 6.39775 0.727252C6.50324 0.832742 6.5625 0.975816 6.5625 1.125V5.4375H10.875C11.0242 5.4375 11.1673 5.49676 11.2727 5.60225C11.3782 5.70774 11.4375 5.85082 11.4375 6Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_91_304">
+              <rect width="12" height="12" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              <p class="paragraph">Crea playlist</p> 
+          </button>
+          <button class="like">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_91_306)">
+              <path d="M11.7929 3.16466C11.6633 2.52012 11.3403 1.93037 10.8671 1.474C10.3938 1.01763 9.79273 0.716305 9.1439 0.61016C8.65642 0.532452 8.15757 0.568516 7.68633 0.715534C7.21509 0.862553 6.78422 1.11654 6.4274 1.45766C6.31125 1.56568 6.15852 1.62572 5.9999 1.62572C5.84129 1.62572 5.68856 1.56568 5.5724 1.45766C4.97998 0.884642 4.18951 0.561966 3.36532 0.556706C2.54113 0.551446 1.74661 0.864007 1.14692 1.42942C0.547223 1.99483 0.188488 2.76959 0.145279 3.59267C0.10207 4.41575 0.37771 5.22382 0.914905 5.84891L5.3519 11.1364C5.43131 11.2309 5.53043 11.3068 5.64231 11.359C5.75419 11.4111 5.87611 11.4381 5.99953 11.4381C6.12295 11.4381 6.24487 11.4111 6.35675 11.359C6.46862 11.3068 6.56774 11.2309 6.64715 11.1364L11.0842 5.84891C11.3979 5.48471 11.6248 5.05394 11.7475 4.58917C11.8703 4.12441 11.8858 3.6378 11.7929 3.16616V3.16466Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_91_306">
+              <rect width="12" height="12" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+                <p class="paragraph">Brani che ti piacciono</p>             
+          </button>
+          <button class="bookmark">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.8125 0C2.4644 0 2.13056 0.138281 1.88442 0.384422C1.63828 0.630564 1.5 0.964403 1.5 1.3125V11.0265C1.5 11.8147 2.415 12.2512 3.02775 11.7555L5.99925 9.3495L8.9565 11.7525C9.56925 12.2498 10.485 11.814 10.485 11.025V1.3125C10.485 0.964403 10.3467 0.630564 10.1006 0.384422C9.85444 0.138281 9.5206 0 9.1725 0H2.8125Z" fill="white"/>
+              </svg>                
+            <p class="paragraph">I tuoi episodi</p>
+          </button>
+          <hr color="#282828">
+         <p>playlist</p> 
+         <p>playlist</p>
+         <p>playlist</p> 
+         <p>playlist</p>
+         <p>playlist</p>
+         <p>playlist</p> 
+         <p>playlist</p>
+          </div>
+      </section>
+      <!-- contents -->
+      <main class="main"> 
+        <section class="title">
+            <h1 class="title-item">Frank Ocean</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <br>
+        <div id="contenitor-submit">
+            <div class="icon-play">
+                <i id="icon-item-play" class="fas fa-play-circle"></i>
+            </div>
+            <button class="follow">FOLLOWING</button>
+        </div>
+        <h2 class="">Popolari</h2>
+        </section>
+        <section id="list-album">
+            <div id="list">
+
+            </div>
+        </section>
+      </main>
+      <!-- end contents -->
+      <!-- sidebar right -->
+      <section class="side box sd-right">
+        <div class="sidebar">
+          <div class="att-amici">
+            <h5>Attività amici </h5>
+            <div class="icon-amici">
+              <p><i class="fa-solid fa-user-plus"></i></p>
+              <p><i class="fa-solid fa-x"></i></p>
+            </div>
+          </div>
+          <div class="amico">
+            <div>
+              <img src="./assets/img/user.png" alt="user1">
+            </div>
+            <div class="friend-data">
+              <h5>Paolo Rossi</h5>
+              <p>Lose Yourself  &#8901;  Eminem</p>
+              <p><i class="fa-solid fa-compact-disc"></i> EP III</p>
+            </div>
+            <div class="friend-time">
+              <p>4 ore</p>
+            </div>
+          </div>
+          <div class="amico">
+            <div>
+              <img src="./assets/img/user.png" alt="user1">
+            </div>
+            <div class="friend-data">
+              <h5>Luca Verdi</h5>
+              <p>Money  &#8901;  Pink Floyd</p>
+              <p><i class="fa-solid fa-compact-disc"></i> The dark side of th...</p>
+            </div>
+            <div class="friend-time">
+              <p>4 ore</p>
+            </div>
+          </div>
+          <div class="amico">
+            <div>
+              <img src="./assets/img/user.png" alt="user1">
+            </div>
+            <div class="friend-data">
+              <h5>Giovanni Anguria</h5>
+              <p>Lose Yourself  &#8901;  Eminem</p>
+              <p><i class="fa-solid fa-compact-disc"></i> EP III</p>
+            </div>
+            <div class="friend-time">
+              <p>4 ore</p>
+            </div>
+          </div>
+          <div class="amico">
+            <div>
+              <img src="./assets/img/user.png" alt="user1">
+            </div>
+            <div class="friend-data">
+              <h5>Paolo Rossi</h5>
+              
+              <p>Lose Yourself  &#8901;  Eminem</p>
+              <p><i class="fa-solid fa-compact-disc"></i> EP III</p>
+            </div>
+            <div class="friend-time">
+              <p>4 ore</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./artist.js"></script>
+  </body>
+</html>

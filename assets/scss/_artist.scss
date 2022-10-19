@@ -1,0 +1,55 @@
+.main{
+    background-color: $bg-box;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.title-item{
+    margin-top: 10px;
+}
+#contenitor-submit{
+    display: flex;
+    align-items: center;
+}
+.icon-play{
+    font-size: 50px;
+}
+#icon-item-play{    
+    border-radius: 50%;
+    background-color: black;
+    color: $green;
+}
+.follow {
+    padding: 5px 10px;
+    color: $white;
+    background-color: transparent;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#list-item{
+    padding-bottom: 10px;
+}
+.allineamento{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.number-item{
+    margin-right: 10px;
+    color: $text-gray;
+}
+.contenitor-list{
+    width: 90%;
+}
+.img-album{
+    padding-right: 10px;
+}
+.visualize{
+    width: 100%;
+    color: $text-gray;
+    text-align: center;
+}
+.duration{
+    width: 100%;
+    color: $text-gray;
+    text-align: end;
+}
