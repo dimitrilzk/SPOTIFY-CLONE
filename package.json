@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass assets/scss/styles.scss assets/css/styles.css -w -- no -source-map"
+    "compile-sass": "sass assets/scss/styles.scss assets/css/styles.css -w"
   },
   "repository": {
     "type": "git",

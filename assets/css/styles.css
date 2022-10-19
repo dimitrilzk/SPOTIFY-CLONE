@@ -1,17 +1,477 @@
-/* Error: expected "{".
- *   ,
- * 7 | @import "./album";
- *   |                  ^
- *   '
- *   assets\scss\styles.scss 7:18  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 7 \2502  @import "./album";\d\a   \2502                   ^\a   \2575 \a   assets\\scss\\styles.scss 7:18  root stylesheet';
+.h1, h1 {
+  font-size: 32px;
+  font-family: "CircularStd-900", "Albert sans", sans-serif;
+  font-weight: 900;
+  line-height: 36px;
 }
+
+.h2, h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.h3, h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.h4, h4 {
+  font-size: 16px;
+  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.h5, h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.h6, h6 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+}
+
+.p, p {
+  font-size: 14px;
+  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: #b3b3b3;
+}
+
+.h2:hover, h2:hover, .h6:hover, h6:hover, .p:hover, p:hover {
+  text-decoration: underline;
+}
+
+.p:hover, p:hover {
+  color: #ffffff;
+}
+
+.topbar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #000000;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: auto;
+  background-color: #121212;
+}
+
+.btn:hover {
+  background-color: #232323;
+}
+
+.search {
+  display: flex;
+}
+
+.home {
+  width: 50px;
+  height: 50px;
+  background-color: #232323;
+  color: #ffffff;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: medium;
+}
+
+path {
+  color: whitesmoke;
+}
+
+.input {
+  margin: 0 10px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #232323;
+}
+.input .btn {
+  width: 50px;
+  height: 50px;
+  background-color: #232323;
+}
+.input input {
+  width: 400px;
+  border-radius: 0px 30px 30px 0px;
+  color: #a6a6a6;
+  padding-left: 10px;
+  vertical-align: super;
+  margin: auto;
+  background-color: #232323;
+}
+.input input:focus, .input input:active, .input input:enabled {
+  border: none;
+}
+
+.user {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: #232323;
+  border-radius: 50%;
+}
+
+.sd-right {
+  max-width: 20%;
+}
+
+.l {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.add {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.like {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.bookmark {
+  display: flex;
+  background-color: #121212;
+  align-items: center;
+  border: 0px;
+}
+
+.paragraph {
+  padding-left: 10px;
+}
+
+main {
+  max-width: 60%;
+}
+
+.sd-right {
+  max-width: 20%;
+}
+
+.att-amici {
+  margin-bottom: 30px;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.icon-amici {
+  display: flex;
+}
+.icon-amici i {
+  margin-left: 10px;
+}
+
+.amico {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.amico p, .amico h5 {
+  margin: 0px;
+}
+.amico .friend-data {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.amico .friend-time {
+  text-align: end;
+}
+
+.artista-img {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.artista-img img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.album-info {
+  display: flex;
+  align-items: flex-end;
+}
+.album-info h1 {
+  font-size: 60px;
+  margin-block: 15px;
+}
+.album-info h5 {
+  margin-left: 10px;
+}
+.album-info h6 {
+  margin-bottom: 45px;
+}
+
+.album-details {
+  margin-top: 55px;
+}
+
+.album-img {
+  margin: 25px;
+}
+
+.album-tracks {
+  background-color: #232323;
+}
+
+.album-play {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1ed760;
+  font-size: 15px;
+  border: none;
+}
+.album-play i {
+  vertical-align: middle;
+}
+
+.album-btn {
+  border: none;
+  background-color: #232323;
+  color: #a6a6a6;
+  font-size: 20px;
+  margin-inline: 8px;
+  vertical-align: sub;
+}
+
+.album-legend {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-inline: 30px;
+}
+
+.genera-tracce {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-inline: 30px;
+}
+.genera-tracce div p {
+  margin: 0px;
+}
+.genera-tracce div h4 {
+  margin-bottom: 5px;
+}
+.genera-tracce .row-tracks {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #fac54d;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.home-container {
+  width: 100%;
+}
+.home-container .content-block {
+  display: flex;
+  flex-direction: column;
+}
+.home-container .content-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-container .content-title a {
+  text-decoration: none;
+  color: #a6a6a6;
+}
+.home-container .card-row-album, .home-container .card-row-artist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.home-container .card-row-album .card, .home-container .card-row-artist .card {
+  padding: 15px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: #181818;
+}
+.home-container .card-row-album .card .card-cover, .home-container .card-row-artist .card .card-cover {
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+.home-container .card-row-album .card .card-cover img, .home-container .card-row-artist .card .card-cover img {
+  max-width: 150px;
+  max-height: fit-content;
+  vertical-align: bottom;
+}
+.home-container .card-row-album .card .card-titles, .home-container .card-row-artist .card .card-titles {
+  margin: 5px 0 10px 0;
+}
+.home-container .card-row-album .card .card-titles h3, .home-container .card-row-artist .card .card-titles h3 {
+  margin-bottom: 0;
+}
+.home-container .card-row-album .card .card-titles p, .home-container .card-row-artist .card .card-titles p {
+  margin-top: 0;
+}
+
+.artist-cover img {
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: fit-content;
+  vertical-align: bottom;
+}
+
+.main {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.title-item {
+  margin-top: 10px;
+}
+
+#contenitor-submit {
+  display: flex;
+  align-items: center;
+}
+
+.icon-play {
+  font-size: 50px;
+}
+
+#icon-item-play {
+  border-radius: 50%;
+  background-color: black;
+  color: #1ed760;
+}
+
+.follow {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#list-item {
+  padding-bottom: 10px;
+}
+
+.allineamento {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.number-item {
+  margin-right: 10px;
+  color: #a6a6a6;
+}
+
+.contenitor-list {
+  width: 90%;
+}
+
+.img-album {
+  padding-right: 10px;
+}
+
+.visualize {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.duration {
+  width: 100%;
+  color: #a6a6a6;
+  text-align: end;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url(../fonts/CircularStd-Black.otf);
+  src: url(../fonts/CircularStd-Bold.otf);
+  src: url(../fonts/CircularStd-Medium.otf);
+  src: url(../fonts/CircularStd-Book.otf);
+}
+@font-face {
+  font-family: "CircularStd-900";
+  src: url(../fonts/CircularStd-Black.otf);
+}
+@font-face {
+  font-family: "CircularStd-400";
+  src: url(../fonts/CircularStd-Medium.otf);
+}
+@font-face {
+  font-family: "CircularStd-200";
+  src: url(../fonts/CircularStd-Book.otf);
+}
+body {
+  background-color: #000000;
+  color: white;
+  font-family: "CircularStd", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.side {
+  width: 20%;
+  height: 100%;
+  margin: 10px;
+}
+
+.main {
+  width: 60%;
+  height: 100%;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
