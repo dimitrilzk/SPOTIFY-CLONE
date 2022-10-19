@@ -264,7 +264,7 @@ main {
   max-height: 100%;
 }
 .home-container .card-row-album .card .card-cover img, .home-container .card-row-artist .card .card-cover img {
-  max-width: 100%;
+  max-width: 150px;
   max-height: fit-content;
   vertical-align: bottom;
 }
