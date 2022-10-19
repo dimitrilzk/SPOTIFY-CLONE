@@ -1,8 +1,3 @@
-let ciao = "Saluto"
-console.log(ciao);
-
-
-
 async function displaySpotify(){
     let album1 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/39915291")
     let albumObjects = await album1.json();
@@ -57,7 +52,7 @@ async function displaySpotify(){
     </div>
   </div>`;
   
-    let artist1 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/39915291")
+    let artist1 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/365343647")
     let artistObjects = await artist1.json();
 
     let artist2 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/39949511")
