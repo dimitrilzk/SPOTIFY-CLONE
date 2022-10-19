@@ -240,6 +240,37 @@ main {
   margin: 25px;
 }
 
+.album-tracks {
+  background-color: #232323;
+}
+
+.album-play {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1ed760;
+  font-size: 15px;
+  border: none;
+}
+.album-play i {
+  vertical-align: middle;
+}
+
+.album-btn {
+  border: none;
+  background-color: #232323;
+  color: #a6a6a6;
+  font-size: 20px;
+  margin-inline: 8px;
+  vertical-align: sub;
+}
+
+.album-legend {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 .banner {
   display: flex;
   margin-top: 5px;
