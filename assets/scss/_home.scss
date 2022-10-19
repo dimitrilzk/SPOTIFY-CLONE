@@ -72,6 +72,9 @@
 .artist-cover{
     img{
         border-radius: 50%;
+        max-width: 150px;
+        max-height: fit-content;
+        vertical-align:bottom;
     }
 }
 
