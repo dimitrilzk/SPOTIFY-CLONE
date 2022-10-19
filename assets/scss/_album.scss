@@ -69,4 +69,8 @@
     div h4 {
         margin-bottom: 5px;
     }
+    .row-tracks {
+        display: flex;
+        flex-direction: column;
+    }
 }

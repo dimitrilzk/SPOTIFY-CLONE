@@ -284,6 +284,10 @@ main {
 .genera-tracce div h4 {
   margin-bottom: 5px;
 }
+.genera-tracce .row-tracks {
+  display: flex;
+  flex-direction: column;
+}
 
 @font-face {
   font-family: "CircularStd";

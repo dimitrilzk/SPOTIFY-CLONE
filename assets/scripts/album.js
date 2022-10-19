@@ -12,11 +12,21 @@ async function visualizeAlbumInfo() {
   <h5>${res.contributors[0].name}</h5>
   </div>
   </div>`;
-  // let tracks = await fetch("https://api.deezer.com/album/39915291/tracks");
-  // let result = await tracks.json();
-  // let arrayResult = result.data;
-  // for (let tracks of arrayResult);
-  // document.querySelector(".genera-tracce").innerHTML += `<h1>${tracks.title}</h1>`;
+  let arrayRes = res.tracks.data;
+  for (let titolo of arrayRes) {
+    document.querySelector(".genera-tracce").innerHTML += `<div class="row-tracks"><div>
+    <h4>${titolo.title}</h4>
+    <p>${titolo.artist.name}</p>
+  </div>
+  <div>
+    <h6>${titolo.rank}</h6>
+  </div>
+  <div>
+    <h6>${titolo.duration}</h6>
+  </div>
+</div>
+</div>`;
+  }
 }
 
 window.onload = async () => {
