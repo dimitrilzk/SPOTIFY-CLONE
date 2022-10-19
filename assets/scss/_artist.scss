@@ -31,10 +31,14 @@
 .allineamento{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .number-item{
     margin-right: 10px;
     color: $text-gray;
+}
+.contenitor-list{
+    width: 90%;
 }
 .img-album{
     padding-right: 10px;
