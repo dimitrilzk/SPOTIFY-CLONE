@@ -1,33 +1,57 @@
-.sd-right{
+.sd-left{
     max-width: 20%;
+    
 }
-.l{
+
+
+.btn-side{
     display: flex;
     background-color: $bg-box;
     align-items: center;
-    border: 0px;
+    border: none;
+    background-color: $bg-button;
+    border-radius: 10px;
+    width: 100%;
+    
+    p{
+        padding-left: 20px;
+        width: 100%;
+        text-align: start;
+        text-decoration: none;
+        font-family:'CircularStd-200';
+        
+    }
+    svg{
+        height: 24px;
+    }
 }
-.add{
-    display: flex;
-    background-color: $bg-box;
-    align-items: center;
-    border: 0px;
-}
-.like{
-    display: flex;
-    background-color: $bg-box;
-    align-items: center;
-    border: 0px;
-}
-.bookmark{
-    display: flex;
-    background-color: $bg-box;
-    align-items: center;
-    border: 0px;
-}
-.paragraph{
-    padding-left: 10px;
-}
-main{
-    max-width: 60%;
-}
+
+// .add{
+//     display: flex;
+//     background-color: $bg-box;
+//     align-items: center;
+//     border: 0px;
+// }
+// .like{
+//     display: flex;
+//     background-color: $bg-box;
+//     align-items: center;
+//     border: 0px;
+// }
+// .bookmark{
+//     display: flex;
+//     background-color: $bg-box;
+//     align-items: center;
+//     border: 0px;
+// }
+
+
+// main{
+//     max-width: 60%;
+// }
+
+// box
+// sidebar
+// side
+// sd-left
+// sd-rigth
