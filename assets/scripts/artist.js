@@ -1,13 +1,16 @@
 async function lista() {
-
-    let cambiamento = await fetch ('https://striveschool-api.herokuapp.com/api/deezer/search?q=frank ocean')
-    let convertito = await cambiamento.json()
-    let convertimentoData = convertito.data
-    for (let i = 0; i < convertimentoData.length; i++){
-        document.getElementById('list').innerHTML += `<div id="list-item">
+  let queryString2 = new URLSearchParams(window.location.search);
+  let idArtist = queryString2.get("id");
+  let cambiamento = await fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${idArtist}`
+  );
+  let convertito = await cambiamento.json();
+  let convertimentoData = convertito.data;
+  for (let i = 0; i < convertimentoData.length; i++) {
+    document.getElementById("list").innerHTML += `<div id="list-item">
         <div class="allineamento">
 
-        <div class="number-item">${i+1}</div>
+        <div class="number-item">${i + 1}</div>
         <img class="img-album" src="${convertimentoData[i].album.cover_small}">
         <div class="contenitor-list">
         ${convertimentoData[i].title}
@@ -19,9 +22,9 @@ async function lista() {
         ${convertimentoData[i].duration}
         </div>
         </div>
-        <div>`
-    }
+        <div>`;
+  }
 }
-window.onload = async() => {
-    await lista()
-}
+window.onload = async () => {
+  await lista();
+};

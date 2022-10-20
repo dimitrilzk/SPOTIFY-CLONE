@@ -1,5 +1,7 @@
 async function visualizeAlbumInfo() {
-  let album = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/39915291");
+  let queryString1 = new URLSearchParams(window.location.search);
+  let idAlbum = queryString1.get("id");
+  let album = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${idAlbum}`);
   let res = await album.json();
   document.querySelector(".album-info").innerHTML = `<div class="album-img">
   <img src="${res.cover_medium}" alt="">
