@@ -19,7 +19,7 @@
 
 .h4, h4 {
   font-size: 16px;
-  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-family: "CircularStd-400", "Albert sans", sans-serif;
   font-weight: 400;
   line-height: 26px;
 }
@@ -40,7 +40,7 @@
 
 .p, p {
   font-size: 14px;
-  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-family: "CircularStd-200", "Albert sans", sans-serif;
   font-weight: 400;
   line-height: 22px;
   color: #b3b3b3;
@@ -52,6 +52,11 @@
 
 .p:hover, p:hover {
   color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .topbar {
@@ -131,44 +136,33 @@ path {
   border-radius: 50%;
 }
 
-.sd-right {
-  max-width: 20%;
-}
-
-.l {
+.btn-side {
   display: flex;
   background-color: #121212;
   align-items: center;
-  border: 0px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0.8;
+}
+.btn-side p {
+  margin: 8px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: start;
+  text-decoration: none;
 }
 
-.add {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
+.btn-side:hover {
+  opacity: 1;
 }
 
-.like {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
+.playlist {
+  font-family: "Albert sans", sans-serif;
+  font-weight: 400;
 }
-
-.bookmark {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
-}
-
-.paragraph {
-  padding-left: 10px;
-}
-
-main {
-  max-width: 60%;
+.playlist p {
+  text-decoration: none;
 }
 
 .sd-right {
