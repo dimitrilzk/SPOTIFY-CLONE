@@ -14,18 +14,18 @@ async function visualizeAlbumInfo() {
   </div>`;
   let arrayRes = res.tracks.data;
   for (let titolo of arrayRes) {
-    document.querySelector(".genera-tracce").innerHTML += `<div class="row-tracks"><div>
-    <h4>${titolo.title}</h4>
-    <p>${titolo.artist.name}</p>
+    document.querySelector(".genera-tracce").innerHTML += `<div class="row-tracks"><div class="ta">
+      <h4>${titolo.title}</h4>
+      <p>${titolo.artist.name}</p>
+    </div>
+    <div class="ranks">
+      <h6>${titolo.rank}</h6>
+    </div>
+    <div>
+      <h6>${titolo.duration}</h6>
+    </div>
   </div>
-  <div>
-    <h6>${titolo.rank}</h6>
-  </div>
-  <div>
-    <h6>${titolo.duration}</h6>
-  </div>
-</div>
-</div>`;
+  </div>`;
   }
 }
 

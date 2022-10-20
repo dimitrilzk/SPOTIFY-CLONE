@@ -274,7 +274,8 @@ main {
 
 .genera-tracce {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-inline: 30px;
 }
@@ -286,7 +287,13 @@ main {
 }
 .genera-tracce .row-tracks {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.genera-tracce .ta {
+  width: 100px;
+}
+.genera-tracce .ranks {
+  margin-right: 50px;
 }
 
 .banner {

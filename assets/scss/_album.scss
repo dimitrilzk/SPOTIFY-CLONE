@@ -60,7 +60,8 @@
 }
 .genera-tracce {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-inline: 30px;
     div p {
@@ -71,6 +72,13 @@
     }
     .row-tracks {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+    .ta {
+        width: 100px;
+    }
+    .ranks {
+        margin-right: 50px;
     }
 }
