@@ -131,10 +131,6 @@ path {
   border-radius: 50%;
 }
 
-.sd-left {
-  max-width: 20%;
-}
-
 .btn-side {
   display: flex;
   background-color: #121212;
