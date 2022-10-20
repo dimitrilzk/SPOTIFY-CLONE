@@ -12,7 +12,7 @@ async function displaySpotify(){
     let album4Objects = await album4.json();
     
     document.querySelector(".card-row-album").innerHTML = 
-    `<div class="card">
+    `<div  onclick="" class="card">
     <div class="card-cover">
         <img src="${albumObjects.cover_medium}" alt="${albumObjects.title} ${albumObjects.contributors[0].name} cover">
     </div>
@@ -112,3 +112,5 @@ async function displaySpotify(){
 window.onload = async() => {
     await displaySpotify();
 }
+
+
