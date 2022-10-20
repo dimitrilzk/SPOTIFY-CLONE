@@ -106,8 +106,6 @@ async function displaySpotify() {
   `;
 }
 
-window.onload = async() => {
-    await displaySpotify();
-}
-
-
+window.onload = async () => {
+  await displaySpotify();
+};

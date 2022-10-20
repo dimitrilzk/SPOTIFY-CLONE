@@ -222,7 +222,7 @@ main {
   align-items: flex-end;
 }
 .album-info h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-block: 15px;
 }
 .album-info h5 {
@@ -254,6 +254,11 @@ main {
 }
 .album-play i {
   vertical-align: middle;
+}
+
+.album-buttons {
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 .album-btn {
@@ -290,10 +295,10 @@ main {
   justify-content: space-between;
 }
 .genera-tracce .ta {
-  width: 100px;
+  width: 250px;
 }
 .genera-tracce .ranks {
-  margin-right: 50px;
+  margin-right: 200px;
 }
 
 .banner {
