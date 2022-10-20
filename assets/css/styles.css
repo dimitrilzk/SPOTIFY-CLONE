@@ -56,12 +56,16 @@
 
 .topbar {
   display: flex;
-  height: 60px;
+  height: 70px;
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #000000;
+  width: 97%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .btn {
@@ -461,6 +465,7 @@ body {
 
 .container {
   display: flex;
+  margin-top: 60px;
 }
 
 .box {
