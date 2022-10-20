@@ -136,7 +136,6 @@ path {
   background-color: #121212;
   align-items: center;
   border: none;
-  background-color: #232323;
   border-radius: 10px;
   width: 100%;
 }
@@ -145,10 +144,10 @@ path {
   width: 100%;
   text-align: start;
   text-decoration: none;
-  font-family: "CircularStd-200";
 }
-.btn-side svg {
-  height: 24px;
+
+.contents {
+  padding: 10px;
 }
 
 .att-amici {
@@ -454,10 +453,8 @@ body {
 .box {
   background-color: #121212;
   border-radius: 10px;
-  width: fit-content;
   height: 80%;
-  padding: 20px;
-  width: 20%;
+  padding: 30px;
   position: fixed;
   top: 80px;
 }
@@ -468,7 +465,7 @@ body {
 }
 
 .main {
-  width: 53%;
+  width: 60%;
   height: 100%;
   margin: 80px 0;
 }

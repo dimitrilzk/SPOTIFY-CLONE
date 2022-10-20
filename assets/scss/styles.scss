@@ -53,10 +53,10 @@ body{
 .box{
     background-color: $bg-box;
     border-radius: 10px;
-    width: fit-content;
+    
     height: 80%;
-    padding: 20px;  
-    width: 20%;
+    padding: 30px;  
+    
     position: fixed;
     top: 80px;
 }
@@ -68,7 +68,8 @@ body{
 }
 
 .main{
-    width: 53%;
+    width: 60%;
     height: 100%;
     margin: 80px 0;
+    
 }
