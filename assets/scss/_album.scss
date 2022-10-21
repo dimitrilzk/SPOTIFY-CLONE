@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-end;
     h1 {
-        font-size: 60px;
+        font-size: 50px;
         margin-block: 15px;
     }
     h5 {
@@ -43,6 +43,10 @@
     i {
         vertical-align: middle;
     }
+}
+.album-buttons{
+    margin-left: 20px;
+    padding-top: 20px;
 }
 .album-btn {
     border: none;
@@ -76,9 +80,9 @@
        
     }
     .ta {
-        width: 100px;
+        width: 250px;
     }
     .ranks {
-        margin-right: 50px;
+        margin-right: 200px;
     }
 }
