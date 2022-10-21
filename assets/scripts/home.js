@@ -1,5 +1,5 @@
 async function displaySpotify() {
-  let album1 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/39915291");
+  let album1 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/9908666");
   let albumObjects = await album1.json();
 
   let album2 = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/105816292");
