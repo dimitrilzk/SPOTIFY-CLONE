@@ -34,3 +34,6 @@ async function visualizeAlbumInfo() {
 window.onload = async () => {
   await visualizeAlbumInfo();
 };
+function greenHeart() {
+  document.querySelector(".likes").style.color = "#1cd760";
+}

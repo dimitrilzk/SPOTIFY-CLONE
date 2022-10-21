@@ -40,6 +40,7 @@
     background-color: $green;
     font-size: 15px;
     border: none;
+    cursor: pointer;
     i {
         vertical-align: middle;
     }
@@ -55,6 +56,10 @@
     font-size: 20px;
     margin-inline: 8px;
     vertical-align: sub;
+    cursor: pointer;
+    .likes {
+        overflow: hidden;
+    }
 }
 .album-legend {
     display: flex;
