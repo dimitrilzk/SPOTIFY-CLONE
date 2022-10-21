@@ -5,19 +5,21 @@ async function lista() {
   let cambiamento = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${idArtist}`);
   let convertito = await cambiamento.json();
   // 2 parte
-    document.querySelector(".title-item").innerHTML = convertito.name
+  
+  document.querySelector(".title-item").innerHTML = convertito.name
   // 3 parte
   let listaCanzoni = convertito.tracklist
   let convertLista = await fetch(listaCanzoni)
   let convertLista2 = await convertLista.json();
   let convertLista3 = convertLista2.data
+  console.log(convertLista3)
   // 4 parte
-  for (let i = 0; i < convertLista3.lenght ; i++) {
-    document.querySelector("#list").innerHTML += 
+  for (let i = 0; i < convertLista3.length ; i++) {
+    document.getElementById("list-album2").innerHTML += 
       `<div id="list-item">
         <div class="allineamento">
         <div class="number-item">${i + 1}</div>
-        <img class="img-album" src="${convertLista3[i].contributors.picture_small}">
+        <img class="img-album" src="${convertLista3[i].contributors[0].picture_small}">
         <div class="contenitor-list">
         ${convertLista3[i].title}
         </div>
