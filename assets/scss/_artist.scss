@@ -2,6 +2,26 @@
     background-color: $bg-box;
     border-radius: 10px;
     padding: 0 10px;
+    height: 100%;
+}
+.title{
+    background-color: $bg-card;
+    padding: 10px;
+    border-radius: 5px;
+}
+#conteiner-artist{
+    display: flex;
+    align-items: center;
+}
+.icon-verify{
+    display: flex;
+    align-items: center;
+}
+.artist-verify{
+    margin-left: 5px;
+}
+.affiancata{
+    margin-left: 10px;
 }
 .title-item{
     margin-top: 10px;
