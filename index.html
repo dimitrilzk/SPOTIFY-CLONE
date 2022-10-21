@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <!-- navbar -->
@@ -19,10 +20,14 @@
       <div class="topbar">
         <div class="page-nav">
           <button class="btn">
-            <i class="fas fa-chevron-left"></i>
+            <a href="./index.html">
+              <i class="fas fa-chevron-left"></i>
+            </a>
           </button>
           <button class="btn">
-            <i class="fas fa-chevron-right"></i>
+            <a href="#">
+              <i class="fas fa-chevron-right"></i>
+            </a>
           </button>
         </div>
 
@@ -52,7 +57,7 @@
     <!-- end navbar -->
     <div class="container">
       <!-- sidebar left -->
-      <section class="side box">
+      <section class="side sx box">
         <div class="fix sd-left">
           <div class="sidebar">
             <button class="btn-side">
@@ -112,7 +117,7 @@
       <main class="main box">
         <div> 
           <div class="contents">
-            <div class="banner" alt="banner">
+            <div class="animate__animated animate__fadeInUp banner" alt="banner">
               <div class="card-cover">
                 <img src="https://e-cdns-images.dzcdn.net/images/cover/109a4dec65712263a0321d926326428a/1000x1000-000000-80-0-0.jpg" alt="">
               </div>
@@ -120,7 +125,8 @@
                 <h1>NEW GOLD</h1>
                 <!-- <h2> (feat. Tame Impala & Bootie Brown)</h2> -->
                 <h3>Ascolta ora l'ultimo singolo dei Gorillaz!</h3>
-                <button class="album-play">Play</button>
+                <button class="button-79 album-play" role="button">Play</button>
+                <!-- <button class="album-play">Play</button> -->
               </div>
             </div>
 
@@ -223,7 +229,7 @@
       </main>
       <!-- end contents -->
       <!-- sidebar right -->
-      <section class="side box ">
+      <section class="side dx box ">
         <div class="fix sd-right">
           <div class="sidebar">
             <div class="att-amici">

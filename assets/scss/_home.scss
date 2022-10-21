@@ -1,3 +1,58 @@
+.button-79 {
+  backface-visibility: hidden;
+  
+  border-radius: .375rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  
+  padding: 10px 25px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-79:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-79:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-79:focus {
+  outline: 0 solid transparent;
+}
+
+.button-79:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-79:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-79:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
 .banner{
     display: flex;
     margin: 0px;
@@ -90,6 +145,44 @@
                     opacity: 1;
                     box-shadow: 0 8px 24px rgba(0,0,0,.5);
                 }
+
+                .album-play:disabled {
+                    color: #787878;
+                    cursor: auto;
+                  }
+                  
+                .album-play:not(:disabled):hover {
+                    transform: scale(1.05);
+                  }
+                  
+                .album-play:not(:disabled):hover:active {
+                    transform: scale(1.05) translateY(.125rem);
+                  }
+                  
+                .album-play:focus {
+                    outline: 0 solid transparent;
+                  }
+                  
+                .album-play:focus:before {
+                    border-width: .125rem;
+                    content: "";
+                    left: calc(-1*.375rem);
+                    pointer-events: none;
+                    position: absolute;
+                    top: calc(-1*.375rem);
+                    transition: border-radius;
+                    user-select: none;
+                  }
+                  
+                .album-play:focus:not(:focus-visible) {
+                    outline: 0 solid transparent;
+                  }
+                  
+                .album-play:not(:disabled):active {
+                    transform: translateY(.125rem);
+                  }
+
+
                 // background-color: blue;
                 img{
                     max-width: 150px;
