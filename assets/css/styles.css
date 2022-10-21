@@ -200,6 +200,10 @@ path {
   text-align: end;
 }
 
+.main {
+  background-color: #cdc8c8;
+}
+
 .artista-img {
   display: flex;
   align-items: center;
@@ -213,8 +217,10 @@ path {
 }
 
 .album-info {
+  background-color: #181818;
   display: flex;
   align-items: flex-end;
+  border-radius: 10px;
 }
 .album-info h1 {
   font-size: 50px;
@@ -236,7 +242,8 @@ path {
 }
 
 .album-tracks {
-  background-color: #232323;
+  background-color: #121212;
+  border-radius: 10px;
 }
 
 .album-play {
@@ -259,7 +266,7 @@ path {
 
 .album-btn {
   border: none;
-  background-color: #232323;
+  background-color: #121212;
   color: #a6a6a6;
   font-size: 20px;
   margin-inline: 8px;

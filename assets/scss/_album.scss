@@ -1,3 +1,6 @@
+.main {
+    background-color: #cdc8c8;
+}
 .artista-img {
     display: flex;
     align-items: center;
@@ -10,8 +13,10 @@
     }
 }
 .album-info {
+    background-color: $bg-card;
     display: flex;
     align-items: flex-end;
+    border-radius: 10px;
     h1 {
         font-size: 50px;
         margin-block: 15px;
@@ -31,7 +36,8 @@
 }
 //tracks
 .album-tracks {
-    background-color: $bg-button;
+    background-color: $bg-box;
+    border-radius: 10px;
 }
 .album-play {
     width: 40px;
@@ -51,7 +57,7 @@
 }
 .album-btn {
     border: none;
-    background-color: $bg-button;
+    background-color: $bg-box;
     color: $text-gray;
     font-size: 20px;
     margin-inline: 8px;
