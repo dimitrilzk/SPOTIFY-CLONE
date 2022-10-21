@@ -1,11 +1,25 @@
+// .topbar{
+//     display: flex;
+//     height: 60px;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     background-color: $bg-color;
+// }
+
 .topbar{
     display: flex;
-    height: 60px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $bg-color;
+    width: 97%;
+    position:fixed;
+    top: 0;
+    left: 0;
 }
 
 .btn{

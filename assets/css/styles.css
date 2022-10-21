@@ -19,7 +19,7 @@
 
 .h4, h4 {
   font-size: 16px;
-  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-family: "CircularStd-400", "Albert sans", sans-serif;
   font-weight: 400;
   line-height: 26px;
 }
@@ -40,7 +40,7 @@
 
 .p, p {
   font-size: 14px;
-  font-family: "CircularStd-400" "Albert sans", sans-serif;
+  font-family: "CircularStd-200", "Albert sans", sans-serif;
   font-weight: 400;
   line-height: 22px;
   color: #b3b3b3;
@@ -54,14 +54,23 @@
   color: #ffffff;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .topbar {
   display: flex;
-  height: 60px;
+  height: 70px;
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #000000;
+  width: 97%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .btn {
@@ -127,48 +136,33 @@ path {
   border-radius: 50%;
 }
 
-.sd-right {
-  max-width: 20%;
-}
-
-.l {
+.btn-side {
   display: flex;
   background-color: #121212;
   align-items: center;
-  border: 0px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0.8;
+}
+.btn-side p {
+  margin: 8px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: start;
+  text-decoration: none;
 }
 
-.add {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
+.btn-side:hover {
+  opacity: 1;
 }
 
-.like {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
+.playlist {
+  font-family: "Albert sans", sans-serif;
+  font-weight: 400;
 }
-
-.bookmark {
-  display: flex;
-  background-color: #121212;
-  align-items: center;
-  border: 0px;
-}
-
-.paragraph {
-  padding-left: 10px;
-}
-
-main {
-  max-width: 60%;
-}
-
-.sd-right {
-  max-width: 20%;
+.playlist p {
+  text-decoration: none;
 }
 
 .att-amici {
@@ -308,15 +302,43 @@ main {
 
 .banner {
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  background-color: #fac54d;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin: 0px;
+  margin-bottom: 25px;
+  background-color: #be7fd0;
+  padding-top: 0px;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+.banner .card-cover {
+  max-width: 100%;
+  max-height: 100%;
+}
+.banner .card-cover img {
+  max-width: 200px;
+  max-height: fit-content;
+  vertical-align: bottom;
+}
+.banner .card-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+.banner .card-titles h1 {
+  font-size: 65px;
+}
+.banner .card-titles h1, .banner .card-titles h3, .banner .card-titles h2 {
+  margin: 10px 0;
+}
+.banner .card-titles button {
+  width: 80px;
+  height: 45px;
+  border-radius: 50px;
+  margin-top: 10px;
 }
 
 .home-container {
@@ -340,6 +362,7 @@ main {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .home-container .card-row-album .card, .home-container .card-row-artist .card {
   padding: 15px;
@@ -353,6 +376,21 @@ main {
   overflow: hidden;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.home-container .card-row-album .card .card-cover .album-play, .home-container .card-row-artist .card .card-cover .album-play {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  opacity: 0;
+}
+.home-container .card-row-album .card .card-cover .album-play:hover, .home-container .card-row-artist .card .card-cover .album-play:hover {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 .home-container .card-row-album .card .card-cover img, .home-container .card-row-artist .card .card-cover img {
   max-width: 150px;
@@ -374,6 +412,7 @@ main {
   max-width: 150px;
   max-height: fit-content;
   vertical-align: bottom;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .main {
@@ -471,17 +510,35 @@ body {
 
 .container {
   display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
 }
 
 .box {
+  padding: 20px;
+}
+
+.fix {
+  position: fixed;
   background-color: #121212;
   border-radius: 10px;
   padding: 20px;
+  width: 17.8%;
+  height: 86vh;
+  top: 70px;
+}
+
+.sd-left {
+  left: 10px;
+}
+
+.sd-right {
+  right: 10px;
 }
 
 .side {
   width: 20%;
-  height: 100%;
+  height: 86vh;
   margin: 10px;
 }
 
@@ -489,6 +546,13 @@ body {
   width: 60%;
   height: 100%;
   margin: 10px 0;
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sidebar {
+  position: fixed;
 }
 
 /*# sourceMappingURL=styles.css.map */

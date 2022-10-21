@@ -29,7 +29,7 @@ $bg-color: #000000;
 
 .h4, h4{
     font-size: 16px;
-    font-family: 'CircularStd-400' 'Albert sans', sans-serif;
+    font-family: 'CircularStd-400', 'Albert sans', sans-serif;
     font-weight: 400;
     line-height: 26px;
 }
@@ -50,7 +50,7 @@ $bg-color: #000000;
 
 .p, p{
     font-size: 14px;
-    font-family: 'CircularStd-400' 'Albert sans', sans-serif;
+    font-family: 'CircularStd-200', 'Albert sans', sans-serif;
     font-weight: 400;
     line-height: 22px;
     color: #b3b3b3;
@@ -63,6 +63,11 @@ $bg-color: #000000;
 //overlay
 .p:hover, p:hover {
     color: $white;
+}
+
+a{
+    color:$white;
+    text-decoration: none;
 }
 
 

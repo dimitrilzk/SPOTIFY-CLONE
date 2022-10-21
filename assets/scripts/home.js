@@ -13,6 +13,7 @@ async function displaySpotify() {
 
   document.querySelector(".card-row-album").innerHTML = `<div class="card">
     <div class="card-cover">
+        <button class="album-play"><i class="fa-solid fa-play"></i></button>
         <img src="${albumObjects.cover_medium}" alt="${albumObjects.title} ${albumObjects.contributors[0].name} cover">
     </div>
     <div class="card-titles"> 
@@ -23,6 +24,7 @@ async function displaySpotify() {
   
   <div class="card">
     <div class="card-cover">
+        <button class="album-play"><i class="fa-solid fa-play"></i></button>
         <img src="${album2Objects.cover_medium}" alt="${album2Objects.title} ${album2Objects.contributors[0].name} cover">
     </div>
     <div class="card-titles">
@@ -33,6 +35,7 @@ async function displaySpotify() {
   
   <div class="card">
     <div class="card-cover">
+        <button class="album-play"><i class="fa-solid fa-play"></i></button>
         <img src="${album3Objects.cover_medium}" alt="${album3Objects.title} ${album3Objects.contributors[0].name} cover">
     </div>
     <div class="card-titles">
@@ -43,6 +46,7 @@ async function displaySpotify() {
   
   <div class="card">
     <div class="card-cover">
+        <button class="album-play"><i class="fa-solid fa-play"></i></button>
         <img src="${album4Objects.cover_medium}" alt="${album4Objects.title} ${album4Objects.contributors[0].name} cover">
     </div>
     <div class="card-titles">
