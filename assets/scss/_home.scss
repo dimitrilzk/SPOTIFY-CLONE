@@ -1,14 +1,42 @@
 .banner{
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    background-color: #fac54d;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin: 0px;
+    margin-bottom: 25px;
+    background-color: #be7fd0;
+    padding-top: 0px;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size:contain;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    .card-cover{
+        max-width: 100%;
+        max-height: 100%;
+        img{
+            max-width: 200px;
+            max-height: fit-content;
+            vertical-align:bottom;
+        }
+    }
+    .card-titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 35px;
+        h1{
+            font-size: 65px;
+        }
+        h1, h3, h2{
+            margin: 10px 0;
+        }
+        button{
+            width: 80px;
+            height: 45px;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+    }
 }
 
 .home-container{
@@ -17,9 +45,6 @@
     .content-block{
         display: flex;
         flex-direction: column;
-        
-    
-        
     }
 
     .content-title{
@@ -37,6 +62,8 @@
         width: 100%;
         // background-color: red;
         justify-content: space-between;
+        margin-bottom: 15px;
+        
         .card{  
             padding: 15px;
             margin: 10px 5px;
@@ -48,6 +75,21 @@
                 overflow: hidden;
                 max-width: 100%;
                 max-height: 100%;
+                box-shadow: 0 8px 24px rgba(0,0,0,.5);
+                position: relative;
+                .album-play{
+                    position: absolute;
+                    bottom: -10px;
+                    right: 10px;
+                    opacity: 0;
+                }
+                .album-play:hover{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    opacity: 1;
+                    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+                }
                 // background-color: blue;
                 img{
                     max-width: 150px;
@@ -75,5 +117,6 @@
         max-width: 150px;
         max-height: fit-content;
         vertical-align:bottom;
+        box-shadow: 0 8px 24px rgba(0,0,0,.5);
     }
 }

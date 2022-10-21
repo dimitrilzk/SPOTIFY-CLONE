@@ -292,15 +292,43 @@ path {
 
 .banner {
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  background-color: #fac54d;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin: 0px;
+  margin-bottom: 25px;
+  background-color: #be7fd0;
+  padding-top: 0px;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+.banner .card-cover {
+  max-width: 100%;
+  max-height: 100%;
+}
+.banner .card-cover img {
+  max-width: 200px;
+  max-height: fit-content;
+  vertical-align: bottom;
+}
+.banner .card-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+.banner .card-titles h1 {
+  font-size: 65px;
+}
+.banner .card-titles h1, .banner .card-titles h3, .banner .card-titles h2 {
+  margin: 10px 0;
+}
+.banner .card-titles button {
+  width: 80px;
+  height: 45px;
+  border-radius: 50px;
+  margin-top: 10px;
 }
 
 .home-container {
@@ -324,6 +352,7 @@ path {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .home-container .card-row-album .card, .home-container .card-row-artist .card {
   padding: 15px;
@@ -337,6 +366,21 @@ path {
   overflow: hidden;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.home-container .card-row-album .card .card-cover .album-play, .home-container .card-row-artist .card .card-cover .album-play {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  opacity: 0;
+}
+.home-container .card-row-album .card .card-cover .album-play:hover, .home-container .card-row-artist .card .card-cover .album-play:hover {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 .home-container .card-row-album .card .card-cover img, .home-container .card-row-artist .card .card-cover img {
   max-width: 150px;
@@ -358,6 +402,7 @@ path {
   max-width: 150px;
   max-height: fit-content;
   vertical-align: bottom;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .main {
