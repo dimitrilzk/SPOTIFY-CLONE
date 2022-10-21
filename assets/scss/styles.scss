@@ -82,3 +82,93 @@ body{
 .sidebar{
     position: fixed;
 }
+
+// RESPONSIVE
+@media screen and (max-width: 1350px){
+
+    .dx{
+        display: none;
+    }
+
+    .fix{
+        width: 18.2%;
+    }
+
+    .main{
+        width: 80%;
+        margin: 10px 10px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    .dx{
+        display: none;
+    }
+
+    .side{
+        width: 30%;
+    }
+
+    .fix{
+        width: 20.8%;
+    }
+
+    .main{
+        width: 100%;
+        margin: 10px 10px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .dx{
+        display: none;
+    }
+
+    .side{
+        width: 40%;
+    }
+
+    .fix{
+        width: 25%;
+    }
+
+    .main{
+        width: 100%;
+        margin: 10px 10px 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .dx, .sx{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+        margin: 20px
+    }
+
+}
+
+@media screen and (max-width: 676px){
+
+   .topbar{
+    display: none;
+   }
+
+   .main{
+    width: 100%;
+    margin: 0px
+}
+
+
+}
+
+
+
