@@ -309,6 +309,17 @@ path {
   margin-right: 200px;
 }
 
+@media screen and (max-width: 1200px) {
+  .album-info h1 {
+    font-size: 40px;
+  }
+  .album-info h5 {
+    font-size: 13px;
+  }
+  .album-info h6 {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 992px) {
   .album-info h1 {
     font-size: 30px;
@@ -318,6 +329,117 @@ path {
   }
   .album-info h6 {
     font-size: 12px;
+  }
+  .genera-tracce h4 {
+    font-size: 15px;
+  }
+  .genera-tracce p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .album-info h1 {
+    font-size: 20px;
+  }
+  .album-info h5 {
+    font-size: 12px;
+  }
+  .album-info h6 {
+    font-size: 11px;
+  }
+  .genera-tracce .ta {
+    width: 150px;
+  }
+  .genera-tracce .ranks {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 523px) {
+  .album-info h1 {
+    font-size: 15px;
+  }
+  .album-info h5 {
+    font-size: 12px;
+  }
+  .album-info h6 {
+    font-size: 11px;
+  }
+  .album-info h1 {
+    font-size: 18px;
+  }
+  .album-info h5 {
+    font-size: 11px;
+  }
+  .album-info h6 {
+    font-size: 10px;
+  }
+  .genera-tracce h4 {
+    font-size: 14px;
+  }
+  .genera-tracce p {
+    font-size: 12px;
+  }
+  .genera-tracce .ta {
+    width: 150px;
+  }
+  .genera-tracce .ranks {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 477px) {
+  .album-info h1 {
+    font-size: 13px;
+  }
+  .album-info h5 {
+    font-size: 10px;
+  }
+  .album-info h6 {
+    font-size: 9px;
+  }
+  .genera-tracce h4 {
+    font-size: 13px;
+  }
+  .genera-tracce p {
+    font-size: 11px;
+  }
+  .genera-tracce .ta {
+    width: 100px;
+  }
+  .genera-tracce .ranks {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .album-info {
+    background-color: #181818;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .album-info .album-img {
+    margin: 10px;
+  }
+  .album-info h1 {
+    font-size: 12px;
+  }
+  .album-info h5 {
+    font-size: 10px;
+  }
+  .album-info h6 {
+    font-size: 8px;
+  }
+  .genera-tracce h4 {
+    font-size: 13px;
+  }
+  .genera-tracce p {
+    font-size: 11px;
+  }
+  .genera-tracce .ta {
+    width: 100px;
+  }
+  .genera-tracce .ranks {
+    margin-right: 50px;
   }
 }
 .button-79 {
