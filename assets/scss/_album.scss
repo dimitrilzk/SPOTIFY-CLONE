@@ -1,6 +1,3 @@
-.main {
-    background-color: #cdc8c8;
-}
 .artista-img {
     display: flex;
     align-items: center;
@@ -96,4 +93,30 @@
     .ranks {
         margin-right: 200px;
     }
+}
+@media screen and (max-width:1200px) {
+    // .main {
+    //     width: 80%;
+    //     height: 100%;
+    //     margin-top: 10px;
+    //     margin-right: 10px;
+    //     background-color: #121212;
+    //     border-radius: 10px;
+    //     padding: 20px;
+    // }
+}
+@media screen and (max-width:992px) {
+    .album-info {
+        h1 {
+            font-size: 30px;
+        }
+        h5 {
+            font-size: 13px;
+        }
+        h6 {
+            font-size: 12px;
+        }
+        
+    }
+
 }

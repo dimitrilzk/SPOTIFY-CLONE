@@ -200,10 +200,6 @@ path {
   text-align: end;
 }
 
-.main {
-  background-color: #cdc8c8;
-}
-
 .artista-img {
   display: flex;
   align-items: center;
@@ -308,6 +304,17 @@ path {
   margin-right: 200px;
 }
 
+@media screen and (max-width: 992px) {
+  .album-info h1 {
+    font-size: 30px;
+  }
+  .album-info h5 {
+    font-size: 13px;
+  }
+  .album-info h6 {
+    font-size: 12px;
+  }
+}
 .banner {
   display: flex;
   margin: 0px;
