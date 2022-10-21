@@ -41,25 +41,47 @@ body{
 .container{
     display: flex;
     margin-top: 60px;
+    justify-content: space-between;
 }
 
 .box{
+    padding: 20px;
+}
+
+.fix{
+    position: fixed;  
     background-color: $bg-box;
     border-radius: 10px;
     padding: 20px;
-    
+    width: 17.8%;
+    height: 86vh;
+    top: 70px;   
+}
+
+.sd-left{
+    left: 10px;
+}
+.sd-right{
+    right: 10px;
 }
 
 .side{
     width: 20%;
-    height: 100%;
-    margin: 10px;
+    height: 86vh;
+    margin: 10px;   
 }
 
 .main{
     width: 60%;
     height: 100%;
     margin: 10px 0;
+    background-color: $bg-box;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar{
+    position: fixed;
 }
 
 
